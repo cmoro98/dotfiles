@@ -1,0 +1,46 @@
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
+
+alias reparar_audio='sudo alsa force-reload'
+alias cd..='cd ..'
+alias frases='nvim /home/krls/Documentos/portapapeles.save'
+alias yt='docker run --rm -u $(id -u):$(id -g) -v $PWD:/data  bxggs/youtube-dl'
+alias ytMP3='docker run --rm -u $(id -u):$(id -g) -v $PWD:/data  bxggs/youtube-dl --extract-audio --audio-format mp3'
+alias vim='nvim'
+alias poemas='nvim /home/krls/Documentos/poemas'
+alias icat="kitty +kitten icat"
+alias d="kitty +kitten diff"
+alias example_find="echo ""find . -maxdepth 1 -type d -exec ls -ld "{}" \;"" "
+# +----+
+# | ls |
+# +----+
+
+alias ls='ls --color=auto'
+alias lsl='ls -l'
+alias ll='ls -lahF'
+alias lls='ls -lahFtr'
+alias la='ls -A'
+alias l='ls -CF'
+
+# +------+
+# | grep |
+# +------+
+alias grepa='grep --color=auto -rni'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# +--------+
+# | Neovim |
+# +--------+
+alias vim='nvim'
+alias vi='nvim'
+alias svim='sudoedit'
+alias dvim="vim -u /usr/share/nvim/archlinux.vim" # nvim with default config
+alias nvimc='rm -I $VIMCONFIG/swap/*'             # clean nvim swap file
+alias nvimcu='rm -I $VIMCONFIG/undo/*'            # clean the vim undo
+alias nviml='nvim -w $VIMCONFIG/vimlog "$@"'      # log the keystrokes
+
+# Folders
+alias doc="$HOME/Documentos"
+alias dow="$HOME/Descargas" 
