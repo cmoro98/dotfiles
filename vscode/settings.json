@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.asm": "asm-collection",
+        "*.tcc": "cpp",
+        "random": "cpp",
+        "numeric": "cpp"
+    },
+    "C_Cpp.clang_format_style": "file:.vscode/.clang-format-cmoro",
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.codeAnalysis.clangTidy.args": ["--config-file=.vscode/.clang-tidy-i-like"]
+}
+// https://clang.llvm.org/extra/clang-tidy/checks/readability/identifier-naming.html
